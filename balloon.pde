@@ -13,6 +13,7 @@ void draw() {
   background(255) ;
   create_balloons() ;
   move() ;
+  stop_move() ;
   
 }
 
@@ -30,3 +31,13 @@ void move() {
     
   }
 }
+
+void stop_move() {
+  if (mousePressed) {
+    position_y = position_y + speed ; 
+    
+  }
+  
+}
+
+  
