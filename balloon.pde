@@ -1,4 +1,5 @@
 int position_x ,position_y ,size,lineLength , speed ;
+color randomColor = color(random(255),random(255),random(255)) ;  
 void setup() {
   size(300,400) ;
   position_x = 100 ;
@@ -18,6 +19,7 @@ void draw() {
 void create_balloons() {
    ellipse(position_x,position_y,size,size) ;
    line(position_x,position_y+size/2,position_x,position_y+size/2+lineLength) ;
+   fill(randomColor) ; 
   
 }
 
